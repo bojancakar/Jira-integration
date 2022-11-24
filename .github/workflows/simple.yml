@@ -19,6 +19,7 @@ jobs:
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
     - name: Find Issue Key
+      id: create
       uses: atlassian/gajira-find-issue-key@v3
       with:
         from: branch
