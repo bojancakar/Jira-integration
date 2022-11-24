@@ -21,7 +21,7 @@ jobs:
     - name: Find Issue Key
       uses: atlassian/gajira-find-issue-key@v3
       with:
-        from: commits
+        from: branch
 
     - name: Transition issue
       uses: atlassian/gajira-transition@master
