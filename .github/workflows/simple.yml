@@ -30,8 +30,9 @@ jobs:
         issue: ${{ steps.create.outputs.issue }}
         transition: "In Progress"
 
-    - name: Comment on issue
-      uses: atlassian/gajira-comment@v3
+    - name: Comment PR
+      uses: sbimochan/jira-link-commenter@v2.4
       with:
-        #issue: ${{ steps.create.outputs.issue }}
-        custom-comment: "${{ steps.create.outputs.issue }} Make push on branch"
+        jira-project-url: https://testgithun.atlassian.net/
+        #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        custom-comment: "Thank you for your contribution! :confetti_ball:"
