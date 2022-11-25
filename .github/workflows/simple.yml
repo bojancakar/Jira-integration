@@ -34,4 +34,4 @@ jobs:
       uses: atlassian/gajira-comment@v3
       with:
         issue: ${{ steps.create.outputs.issue }}
-        custom-comment: "Make push on branch"
+        custom-comment: ${{ steps.create.outputs.issue }} "Make push on branch"
