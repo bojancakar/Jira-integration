@@ -34,7 +34,7 @@ jobs:
       uses: atlassian/gajira-comment@v3
       with:
         issue: ${{ steps.create.outputs.issue }}
-        comment: Novi PR je kreiran na repozitorijumu ${{ github.repository }} , da vidite PR kliknite na link ispod  https://github.com/${{ github.repository	}}/pulls/${{ github.run_number}}	
+        comment: Novi PR je kreiran na repozitorijumu ${{ github.repository }} , da vidite PR kliknite na link ispod  https://github.com/${{ github.repository	}}/pulls/$8+${{ github.run_number}}	
 
 
     
