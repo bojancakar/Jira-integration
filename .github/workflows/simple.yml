@@ -34,5 +34,5 @@ jobs:
       uses: atlassian/gajira-comment@v3
       with:
         issue: ${{ steps.create.outputs.issue }}
-        comment: New PR is made at {{ github.repository }} https://github.com/${{ github.repository	}}/pulls/
+        comment: New PR is made at ${{ github.repository }} https://github.com/${{ github.repository	}}/pulls/
     
