@@ -34,4 +34,5 @@ jobs:
       uses: atlassian/gajira-comment@v3
       with:
         issue: ${{ steps.create.outputs.issue }}
-        comment: pushed  ${{ github.repositoryUrl	 }}
+        comment: prNumber && `https://github.com/${ GITHUB_REPOSITORY }/pull/${ prNumber.trim() }
+    
