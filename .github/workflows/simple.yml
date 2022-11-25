@@ -1,5 +1,5 @@
 on:
-  pull_request:
+  push:
 
 name: Test Transition Issue
 
@@ -29,10 +29,3 @@ jobs:
       with:
         issue: ${{ steps.create.outputs.issue }}
         transition: "In Progress"
-
-    - name: Comment PR
-      uses: sbimochan/jira-link-commenter@v2.4
-      with:
-        jira-project-url: https://testgithun.atlassian.net/
-        #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        custom-comment: "Thank you for your contribution! :confetti_ball:"
