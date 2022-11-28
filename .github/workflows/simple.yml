@@ -36,4 +36,4 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
       with:
         issue: ${{ steps.create.outputs.issue }}
-        comment: Novi PR je kreiran na repozitorijumu ${{ github.repository }} , da vidite PR kliknite na link ispod  https://github.com/${{ github.repository	}}/pulls/$NUMBER
+        comment: Novi PR je kreiran na repozitorijumu ${{ github.repository }} , da vidite PR kliknite na link ispod  https://github.com/${{ github.repository	}}/pulls/${{ github.event.issue.number }}
